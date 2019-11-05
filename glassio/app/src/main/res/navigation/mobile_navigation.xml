@@ -3,41 +3,30 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
-
+    app:startDestination="@id/nav_home">
+    <fragment
+        android:id="@+id/nav_credits"
+        android:name="com.example.glassio.credits"
+        android:label="fragment_credits"
+        tools:layout="@layout/fragment_credits" />
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.glassio.ui.home.HomeFragment"
-        android:label="@string/menu_home"
+        android:name="com.example.glassio.home"
+        android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
-
     <fragment
-        android:id="@+id/nav_gallery"
-        android:name="com.example.glassio.ui.gallery.GalleryFragment"
-        android:label="@string/menu_gallery"
-        tools:layout="@layout/fragment_gallery" />
-
+        android:id="@+id/nav_shoppingCart"
+        android:name="com.example.glassio.shoppingCart"
+        android:label="fragment_shopping_cart"
+        tools:layout="@layout/fragment_shopping_cart" />
     <fragment
-        android:id="@+id/nav_slideshow"
-        android:name="com.example.glassio.ui.slideshow.SlideshowFragment"
-        android:label="@string/menu_slideshow"
-        tools:layout="@layout/fragment_slideshow" />
-
+        android:id="@+id/nav_suggestions"
+        android:name="com.example.glassio.suggestions"
+        android:label="fragment_suggestions"
+        tools:layout="@layout/fragment_suggestions" />
     <fragment
-        android:id="@+id/nav_tools"
-        android:name="com.example.glassio.ui.tools.ToolsFragment"
-        android:label="@string/menu_tools"
-        tools:layout="@layout/fragment_tools" />
-
-    <fragment
-        android:id="@+id/nav_share"
-        android:name="com.example.glassio.ui.share.ShareFragment"
-        android:label="@string/menu_share"
-        tools:layout="@layout/fragment_share" />
-
-    <fragment
-        android:id="@+id/nav_send"
-        android:name="com.example.glassio.ui.send.SendFragment"
-        android:label="@string/menu_send"
-        tools:layout="@layout/fragment_send" />
+        android:id="@+id/nav_topSells"
+        android:name="com.example.glassio.topSells"
+        android:label="fragment_top_sells"
+        tools:layout="@layout/fragment_top_sells" />
 </navigation>
