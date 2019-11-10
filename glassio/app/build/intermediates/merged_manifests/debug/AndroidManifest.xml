@@ -19,14 +19,19 @@
         android:testOnly="true"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.glassio.MainActivity"
+            android:name="com.example.glassio.Splash"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/splashScreen" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.glassio.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme" >
         </activity>
 
         <provider
