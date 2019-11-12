@@ -4,7 +4,7 @@
         android:drawable="@color/white"/>
     <item>
         <bitmap
-            android:src="@drawable/dumby"
+            android:src="@drawable/sheekh_yonis_logo"
             android:gravity="center"/>
     </item>
 </layer-list>
