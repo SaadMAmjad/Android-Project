@@ -6,17 +6,18 @@
     android:layout_height="match_parent"
     tools:context=".topSells">
 
-    <Button
-        android:id="@+id/HightoLow"
-        android:layout_width="214dp"
-        android:layout_height="99dp"
-        android:layout_weight="1"
-        android:text="Button" />
+
 
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
-
+    <Button
+        android:id="@+id/sort"
+        android:layout_width="214dp"
+        android:layout_height="99dp"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:text="Button" />
 </LinearLayout>
