@@ -1,5 +1,7 @@
 package com.example.glassio;
 
+import android.widget.TextView;
+
 public class ListViewData {
 
     private String name;
@@ -44,5 +46,6 @@ public class ListViewData {
     public String toString(){
         return this.name;
     }
+
 
 }
