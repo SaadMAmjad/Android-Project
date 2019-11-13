@@ -31,6 +31,7 @@ import java.util.List;
 public class topSells extends Fragment {
 
     private Button priceBtn;
+    private Button priceBtn2;
     private CustomAdapter adapter;
     private ArrayList<ListViewData> data;
 
@@ -70,6 +71,14 @@ public class topSells extends Fragment {
             @Override
             public void onClick(View view) {
                 sortArrayList();
+            }
+        });
+
+        priceBtn2 = view.findViewById(R.id.sort2);
+        priceBtn2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                reversed();
             }
         });
 
@@ -123,6 +132,13 @@ public class topSells extends Fragment {
         adapter.notifyDataSetChanged();
     }
 
+
+    //AFTER HOURS OF BEING AWAKE LAST NIGHT WE FINALLY GOT THE COLLECTION TO REVERSE FROM HIGHEST TO LOWEST
+    //PS ANDROID DOCS READ MORE OF THEM
+    public void reversed(){
+        Collections.reverse(data);
+        adapter.notifyDataSetChanged();
+    }
 
 
 
