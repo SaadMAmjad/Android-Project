@@ -36,7 +36,7 @@ public class topSells extends Fragment {
 
 
 
-    private ArrayList<ListViewData> listoItems;
+
     public topSells() {
     }
 
@@ -47,7 +47,7 @@ public class topSells extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_top_sells, container, false);
 
-        ListView listView = view.findViewById(R.id.list);
+        final ListView listView = view.findViewById(R.id.list);
         listView.hasExplicitFocusable();
         // A LIST OF THE GLASSES NEEDED
        data = new ArrayList<>();
@@ -112,18 +112,17 @@ public class topSells extends Fragment {
     }
 
 
+    //THIS FUNCTION COMPARES THE ITEMS IN THE LIST AND SORTS THEM ACCORDING TO THE PRICE FROM LOWEST TO HIGHEST
     public void sortArrayList(){
-        Collections.sort(data, new Comparator<ListViewData>() {
-            @Override
-            public int compare(ListViewData o1, ListViewData t1) {
-                return o1.getPrice().compareTo(t1.getPrice());
-            }
-
-        });
-
-
+            Collections.sort(data, new Comparator<ListViewData>() {
+                @Override
+                public int compare(ListViewData o1, ListViewData t1) {
+                        return o1.getPrice().compareTo(t1.getPrice());
+                }
+            });
         adapter.notifyDataSetChanged();
     }
+
 
 
 
