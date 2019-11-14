@@ -10,7 +10,6 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class Splash extends AppCompatActivity {
-    protected int _splashTime = 2000;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
