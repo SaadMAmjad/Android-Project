@@ -27,6 +27,6 @@
     <fragment
         android:id="@+id/nav_topSells"
         android:name="com.example.glassio.topSells"
-        android:label="fragment_top_sells"
+        android:label="Pricing"
         tools:layout="@layout/fragment_top_sells" />
 </navigation>

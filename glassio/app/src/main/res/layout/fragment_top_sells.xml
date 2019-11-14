@@ -6,6 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".topSells">
 
+    <LinearLayout
+        android:layout_width="393dp"
+        android:layout_height="78dp"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/sort2"
+            android:layout_width="214dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Button" />
+
+        <Button
+            android:id="@+id/sort"
+            android:layout_width="214dp"
+            android:layout_height="99dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:text="Button" />
+    </LinearLayout>
 
 
     <ListView
@@ -13,21 +36,4 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1" />
-    <Button
-        android:id="@+id/sort"
-        android:layout_width="214dp"
-        android:layout_height="99dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
-
-    <Button
-        android:id="@+id/sort2"
-        android:layout_width="214dp"
-        android:layout_height="99dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:text="Button" />
-
-
 </LinearLayout>
