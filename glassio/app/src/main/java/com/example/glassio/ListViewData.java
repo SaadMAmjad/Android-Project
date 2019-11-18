@@ -1,7 +1,9 @@
 package com.example.glassio;
 
 
-public class ListViewData {
+import java.io.Serializable;
+
+public class ListViewData implements Serializable {
 
     private String name;
     private String frame;

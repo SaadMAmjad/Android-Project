@@ -18,7 +18,8 @@
         android:id="@+id/nav_shoppingCart"
         android:name="com.example.glassio.shoppingCart"
         android:label="fragment_shopping_cart"
-        tools:layout="@layout/fragment_shopping_cart" />
+        tools:layout="@layout/fragment_shopping_cart"
+        />
     <fragment
         android:id="@+id/nav_suggestions"
         android:name="com.example.glassio.suggestions"
@@ -28,5 +29,14 @@
         android:id="@+id/nav_topSells"
         android:name="com.example.glassio.topSells"
         android:label="Pricing"
-        tools:layout="@layout/fragment_top_sells" />
+        tools:layout="@layout/fragment_top_sells" >
+        <action
+            android:id="@+id/action_nav_topSells_to_details"
+            app:destination="@id/details" />
+    </fragment>
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.glassio.details"
+        android:label="fragment_details"
+        tools:layout="@layout/fragment_details" />
 </navigation>
