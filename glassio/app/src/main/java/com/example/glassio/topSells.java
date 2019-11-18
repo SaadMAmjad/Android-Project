@@ -44,7 +44,7 @@ public class topSells extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_top_sells, container, false);
 
-         final ListView listView = view.findViewById(R.id.list);
+          ListView listView = view.findViewById(R.id.list);
         // A LIST OF THE GLASSES NEEDED
 
        data = new ArrayList<>();
@@ -91,7 +91,14 @@ public class topSells extends Fragment {
                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-               Navigation.findNavController(view).navigate(R.id.action_nav_topSells_to_details);
+
+               Bundle args = new Bundle();
+
+               args.putSerializable("data", data.get(position));
+
+
+
+               Navigation.findNavController(view).navigate(R.id.action_nav_topSells_to_details, args);
            }
        });
 

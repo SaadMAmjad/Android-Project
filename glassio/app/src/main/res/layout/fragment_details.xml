@@ -52,11 +52,6 @@
         android:id="@+id/buttonDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="back" />
+        android:text="add to List" />
 
-    <Button
-        android:id="@+id/button2Detail"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="add" />
 </LinearLayout>
