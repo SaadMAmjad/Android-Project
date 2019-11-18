@@ -58,7 +58,7 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
             this.frame = view.findViewById(R.id.frame);
             this.colorr = view.findViewById(R.id.colorr);
             this.type = view.findViewById(R.id.type);
-            this.image = view.findViewById(R.id.image);
+            this.image = view.findViewById(R.id.imageView2);
             this.price = view.findViewById(R.id.price);
         }
 

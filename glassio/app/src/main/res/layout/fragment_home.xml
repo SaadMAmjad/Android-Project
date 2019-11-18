@@ -13,7 +13,7 @@
         android:layout_height="wrap_content"
         android:textAlignment="center"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="46sp"
+        android:textSize="@dimen/main_title"
         android:text="@string/nav_header_title" />
 
     <TextView
@@ -21,12 +21,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="2dp"
-        android:textSize="22sp"
+        android:textSize="@dimen/main_header"
         android:fontFamily="serif"
         android:text="@string/top_sellers" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="5dp"
+        android:layout_marginStart="3dp"
         android:id="@+id/recycle"
         android:layout_height="wrap_content"
         android:layout_width="match_parent">

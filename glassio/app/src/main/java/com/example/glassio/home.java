@@ -13,6 +13,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Random;
 
 
 /**
@@ -37,8 +40,21 @@ public class home extends Fragment {
         items.add(new ListViewData("Magnifier", R.drawable.glasseseight, 199.99,"Metal","Clear","Prescription"));
         items.add(new ListViewData("The Aviator", R.drawable.glassesone, 119.99,"Metal","Black","Sunglasses"));
         items.add(new ListViewData("Down the Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
-        items.add(new ListViewData("The Adapter", R.drawable.glassesten, 239.99,"Metal","Light Green","Transformer Prescription"));
+        items.add(new ListViewData("The Adapter", R.drawable.glassesten, 239.99,"Metal","Light Green","Transformer"));
+        items.add(new ListViewData("Potters", R.drawable.glasseseleven, 239.99,"Metal","Light Green","Transformer"));
+        items.add(new ListViewData("Average Joe's", R.drawable.glassesfive, 79.99,"Plastic","Clear","Prescription"));
+        items.add(new ListViewData("Blue Steel", R.drawable.glassesfour, 179.99,"Metal","Clear","Prescription"));
+        items.add(new ListViewData("Angular", R.drawable.glassesnine, 149.99,"Metal","Clear","Prescription"));
+        items.add(new ListViewData("Minimalist", R.drawable.glassesthree, 99.99,"Plastic","Clear","Prescription"));
+        items.add(new ListViewData("The Illusion", R.drawable.glassestwo, 89.99,"Plastic","Clear","Prescription"));
 
+        Collections.shuffle(items, new Random());
+
+        for (int i = 0; i <= 11; i++) {
+            if (i > 5) {
+                items.remove(items.size()-1);
+            }
+        }
 
         RecyclerView recyclerView = view.findViewById(R.id.recycle);
 
