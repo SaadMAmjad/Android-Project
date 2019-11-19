@@ -12,7 +12,7 @@
     <fragment
         android:id="@+id/nav_home"
         android:name="com.example.glassio.home"
-        android:label="fragment_home"
+        android:label="Home"
         tools:layout="@layout/fragment_home" />
     <fragment
         android:id="@+id/nav_shoppingCart"
@@ -37,6 +37,6 @@
     <fragment
         android:id="@+id/details"
         android:name="com.example.glassio.details"
-        android:label="fragment_details"
+        android:label="Details"
         tools:layout="@layout/fragment_details" />
 </navigation>
