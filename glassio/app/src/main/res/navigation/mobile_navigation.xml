@@ -37,6 +37,6 @@
     <fragment
         android:id="@+id/details"
         android:name="com.example.glassio.details"
-        android:label="fragment_details"
+        android:label="Details"
         tools:layout="@layout/fragment_details" />
 </navigation>
