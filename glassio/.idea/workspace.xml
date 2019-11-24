@@ -12,7 +12,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="37405f60-edbf-4c6a-bfa9-02b3b4988129" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/glassio/colorBlindTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/glassio/colorBlindTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_color_blind_test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_color_blind_test.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -85,8 +85,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glassio/colorBlindTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="867">
-              <caret line="64" selection-start-line="64" selection-end-line="64" />
+            <state relative-caret-position="612">
+              <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -241,17 +241,19 @@
     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Saad Amjad\Desktop\Random Stuff\Code Stuff\Year Two assignments\Android\Project\Android-Project\glassio\app\src\main\res\layout" />
+      <recent name="C:\Users\Saad Amjad\Desktop\Random Stuff\Code Stuff\Year Two assignments\Android\Project\Android-Project\glassio\app\src\main\res\drawable" />
+      <recent name="C:\Users\Saad Amjad\Desktop\Random Stuff\Code Stuff\Year Two assignments\Android\Project\Android-Project\glassio\app\src\main\java\com\example\glassio" />
+      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+      <recent name="C:\Users\Saad Amjad\Desktop\Random Stuff\Code Stuff\Year Two assignments\Android\Project\Android-Project\glassio\app\src\main\res\drawable-v24" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.glassio" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\res\layout" />
       <recent name="C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\java\com\example\glassio" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
-      <recent name="C:\Users\Saad Amjad\Desktop\Random Stuff\Code Stuff\Year Two assignments\Android\Project\Android-Project\glassio\app\src\main\res\drawable-v24" />
-      <recent name="C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\res\drawable" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -620,6 +622,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glassio/CustomRecyclerViewAdapter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glassio/credits.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -639,17 +648,10 @@
       <provider editor-type-id="android-designer2" />
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glassio/CustomRecyclerViewAdapter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="935">
-          <caret line="64" column="5" selection-start-line="64" selection-start-column="5" selection-end-line="64" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/glassio/colorBlindTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="64" selection-start-line="64" selection-end-line="64" />
+        <state relative-caret-position="612">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
         </state>
       </provider>
     </entry>
