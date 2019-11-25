@@ -1,12 +1,15 @@
 package com.example.glassio;
 
 
+import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +17,7 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 
@@ -22,6 +26,7 @@ import java.util.Random;
  */
 public class home extends Fragment {
 
+    private ArrayList<ListViewData> items;
 
     public home() {
         // Required empty public constructor
@@ -32,9 +37,9 @@ public class home extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view = inflater.inflate(R.layout.fragment_home, container, false);
+        final   View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-        ArrayList<ListViewData> items = new ArrayList<>();
+         items = new ArrayList<>();
         items.add(new ListViewData("On the Range", R.drawable.glassesseven, 29.99,"Plastic","Pink","Safety/Utility"));
         items.add(new ListViewData("Magnifier", R.drawable.glasseseight, 199.99,"Metal","Clear","Prescription"));
         items.add(new ListViewData("The Aviator", R.drawable.glassesone, 119.99,"Metal","Black","Sunglasses"));
@@ -54,7 +59,6 @@ public class home extends Fragment {
                 items.remove(items.size()-1);
             }
         }
-
         RecyclerView recyclerView = view.findViewById(R.id.recycle);
 
          LinearLayoutManager manager = new LinearLayoutManager(getContext());
@@ -67,6 +71,15 @@ public class home extends Fragment {
 //        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         CustomRecyclerViewAdapter adapter = new CustomRecyclerViewAdapter(items);
         recyclerView.setAdapter(adapter);
+
+        adapter.setOnItemClickListener(new CustomRecyclerViewAdapter.OnItemClickListener() {
+            @Override
+            public void onItemClick(int position) {
+                Bundle args = new Bundle();
+                args.putSerializable("data", items.get(position));
+                Navigation.findNavController(view).navigate(R.id.action_nav_home_to_details, args);
+            }
+        });
         
         return view;
     }

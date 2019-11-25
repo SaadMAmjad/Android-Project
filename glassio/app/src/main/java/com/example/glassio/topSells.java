@@ -85,6 +85,7 @@ public class topSells extends Fragment {
                Navigation.findNavController(view).navigate(R.id.action_nav_topSells_to_details, args);
            }
        });
+
         return view;
     }
     //CREATING A CUSTOM VIEW ADAPTER FOR THE LIST OF GLASSES
