@@ -7,7 +7,7 @@
     <fragment
         android:id="@+id/nav_credits"
         android:name="com.example.glassio.credits"
-        android:label="fragment_credits"
+        android:label="Credits"
         tools:layout="@layout/fragment_credits" />
     <fragment
         android:id="@+id/nav_home"
@@ -26,7 +26,7 @@
     <fragment
         android:id="@+id/nav_suggestions"
         android:name="com.example.glassio.cbTest"
-        android:label="colorblind_test"
+        android:label="Colorblind Test"
         tools:layout="@layout/fragment_cb_test" >
         <action
             android:id="@+id/action_nav_suggestions_to_cbAdvice"
@@ -49,6 +49,6 @@
     <fragment
         android:id="@+id/cbAdvice"
         android:name="com.example.glassio.cbAdvice"
-        android:label="fragment_cb_advice"
+        android:label="Advice"
         tools:layout="@layout/fragment_cb_advice" />
 </navigation>
