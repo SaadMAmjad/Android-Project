@@ -32,8 +32,6 @@ public class topSells extends Fragment {
     private ArrayList<ListViewData> data;
 
 
-
-
     public topSells() {
     }
 

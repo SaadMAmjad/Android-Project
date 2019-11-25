@@ -25,9 +25,9 @@
         tools:layout="@layout/fragment_shopping_cart" />
     <fragment
         android:id="@+id/nav_suggestions"
-        android:name="com.example.glassio.suggestions"
-        android:label="fragment_suggestions"
-        tools:layout="@layout/fragment_suggestions" />
+        android:name="com.example.glassio.cbTest"
+        android:label="colorblind_test"
+        tools:layout="@layout/fragment_cb_test" />
     <fragment
         android:id="@+id/nav_topSells"
         android:name="com.example.glassio.topSells"

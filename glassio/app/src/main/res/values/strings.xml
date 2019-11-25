@@ -8,6 +8,7 @@
 
     <string name="sort_button_up">Ascending</string>
     <string name="sort_button_down">Descending</string>
+    <string name="cant_see_it">I can\'t see it</string>
 
     <string name="action_colorB">Color Blind Test</string>
     <string name="action_currency">Currency Conversion</string>
