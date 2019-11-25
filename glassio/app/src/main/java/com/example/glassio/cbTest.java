@@ -6,6 +6,7 @@ import android.os.Bundle;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
+import androidx.navigation.Navigation;
 import androidx.viewpager.widget.ViewPager;
 
 import android.view.LayoutInflater;
@@ -40,7 +41,7 @@ public class cbTest extends Fragment {
         failed.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //code to switch screens here
+                Navigation.findNavController(view).navigate(R.id.action_nav_suggestions_to_cbAdvice);
             }
         });
 

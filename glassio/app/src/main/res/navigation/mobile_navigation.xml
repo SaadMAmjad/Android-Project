@@ -20,14 +20,18 @@
     </fragment>
     <fragment
         android:id="@+id/nav_shoppingCart"
-        android:name="com.example.glassio.shoppingCart"
+        android:name="com.example.glassio.wishList"
         android:label="Wish List"
-        tools:layout="@layout/fragment_shopping_cart" />
+        tools:layout="@layout/fragment_wish_list" />
     <fragment
         android:id="@+id/nav_suggestions"
         android:name="com.example.glassio.cbTest"
         android:label="colorblind_test"
-        tools:layout="@layout/fragment_cb_test" />
+        tools:layout="@layout/fragment_cb_test" >
+        <action
+            android:id="@+id/action_nav_suggestions_to_cbAdvice"
+            app:destination="@+id/cbAdvice" />
+    </fragment>
     <fragment
         android:id="@+id/nav_topSells"
         android:name="com.example.glassio.topSells"
@@ -42,4 +46,9 @@
         android:name="com.example.glassio.details"
         android:label="Details"
         tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@+id/cbAdvice"
+        android:name="com.example.glassio.cbAdvice"
+        android:label="fragment_cb_advice"
+        tools:layout="@layout/fragment_cb_advice" />
 </navigation>

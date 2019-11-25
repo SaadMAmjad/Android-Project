@@ -7,27 +7,27 @@
         <item
             android:id="@+id/nav_home"
             android:icon="@drawable/ic_whatshot_black_24dp"
-            android:title="Whats Hot" />
+            android:title="@string/whatsHot" />
         <item
             android:id="@+id/nav_topSells"
             android:icon="@drawable/ic_trending_up_black_24dp"
-            android:title="Top Sells" />
+            android:title="@string/top_sellers" />
         <item
             android:id="@+id/nav_suggestions"
-            android:icon="@drawable/ic_lightbulb_outline_black_24dp"
-            android:title="Suggestions" />
+            android:icon="@drawable/ic_remove_red_eye_black_24dp"
+            android:title="@string/cbTest" />
         <item
             android:id="@+id/nav_shoppingCart"
-            android:icon="@drawable/ic_shopping_cart_black_24dp"
-            android:title="shopping cart" />
+            android:icon="@drawable/ic_star_black_24dp"
+            android:title="@string/wishList" />
     </group>
 
-    <item android:title="Extras">
+    <item android:title="@string/extra">
         <menu>
             <item
                 android:id="@+id/nav_credits"
                 android:icon="@drawable/ic_group_black_24dp"
-                android:title="credits" />
+                android:title="@string/credits" />
         </menu>
     </item>
 
