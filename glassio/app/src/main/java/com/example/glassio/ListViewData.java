@@ -12,9 +12,6 @@ public class ListViewData implements Serializable {
     private Integer image;
     private Double price;
 
-    public ListViewData() {
-
-    }
     public ListViewData(String name, Integer image,  Double price, String frame,String colorr,String type) {
         this.name = name;
         this.image = image;

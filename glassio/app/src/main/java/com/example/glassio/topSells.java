@@ -46,8 +46,7 @@ public class topSells extends Fragment {
 
           ListView listView = view.findViewById(R.id.list);
         // A LIST OF THE GLASSES NEEDED
-
-       data = new ArrayList<>();
+        data = new ArrayList<>();
         data.add(new ListViewData("The Aviator", R.drawable.glassesone, 119.99,"Metal","Black","Sunglasses"));
         data.add(new ListViewData("Magnifier", R.drawable.glasseseight, 199.99,"Metal","Clear","Prescription"));
         data.add(new ListViewData("On the Range", R.drawable.glassesseven, 29.99,"Plastic","Pink","Safety/Utility"));
@@ -60,7 +59,6 @@ public class topSells extends Fragment {
         data.add(new ListViewData("Down the Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
         data.add(new ListViewData("Angular", R.drawable.glassesnine, 149.99,"Metal","Clear","Prescription"));
 
-
         priceBtn = view.findViewById(R.id.sort);
         priceBtn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -68,8 +66,6 @@ public class topSells extends Fragment {
                 sortArrayList();
             }
         });
-
-
         priceBtn2 = view.findViewById(R.id.sort2);
         priceBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,47 +73,26 @@ public class topSells extends Fragment {
                 reversed();
             }
         });
-
-
-
         //CONNECTING  THE LIST VIEW TO THE CUSTOM VIEW ADAPTER THAT WILL BE MADE BELLOW
          adapter = new CustomAdapter(getContext(), data);
+
         listView.setAdapter(adapter);
-
-
-
-
-
                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
                Bundle args = new Bundle();
-
                args.putSerializable("data", data.get(position));
-
-
-
                Navigation.findNavController(view).navigate(R.id.action_nav_topSells_to_details, args);
            }
        });
-
-
         return view;
     }
-
     //CREATING A CUSTOM VIEW ADAPTER FOR THE LIST OF GLASSES
-
-    public class CustomAdapter extends ArrayAdapter<ListViewData> {
-        private CustomAdapter(@NonNull Context context, ArrayList<ListViewData> items) {
+    public static class CustomAdapter extends ArrayAdapter<ListViewData> {
+        protected CustomAdapter(@NonNull Context context, ArrayList<ListViewData> items) {
             super(context, 0, items);
 
         }
-
-
-
-
-
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -127,7 +102,6 @@ public class topSells extends Fragment {
                 convertView = LayoutInflater.
                         from(getContext()).inflate(R.layout.list_item, parent, false);
             }
-
             TextView name = convertView.findViewById(R.id.name);
             TextView price = convertView.findViewById(R.id.price);
             TextView frameMat = convertView.findViewById(R.id.frame);
@@ -143,11 +117,6 @@ public class topSells extends Fragment {
             return  convertView;
         }
     }
-
-
-
-
-
     //THIS FUNCTION COMPARES THE ITEMS IN THE LIST AND SORTS THEM ACCORDING TO THE PRICE FROM LOWEST TO HIGHEST
     private void sortArrayList(){
             Collections.sort(data, new Comparator<ListViewData>() {
@@ -158,15 +127,12 @@ public class topSells extends Fragment {
             });
         adapter.notifyDataSetChanged();
     }
-
-
     //AFTER HOURS OF BEING AWAKE LAST NIGHT WE FINALLY GOT THE COLLECTION TO REVERSE FROM HIGHEST TO LOWEST
     //PS ANDROID DOCS READ MORE OF THEM
     private void reversed(){
         Collections.reverse(data);
         adapter.notifyDataSetChanged();
     }
-
 
 
 }

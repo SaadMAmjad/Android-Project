@@ -5,10 +5,8 @@
     android:layout_height="match_parent"
     tools:context=".shoppingCart">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ListView
+        android:id="@+id/wishList"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="shopping cart" />
-
+        android:layout_height="match_parent" />
 </FrameLayout>
