@@ -22,7 +22,7 @@ import java.util.List;
  */
 public class details extends Fragment {
     private Button button;
-    public static  ArrayList<ListViewData> dataWish;
+    public static  ArrayList<ListViewData> dataWish = new ArrayList<>();
 
 
 
@@ -30,15 +30,15 @@ public class details extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_details, container, false);
-        dataWish = new ArrayList<>();
+
         if(getArguments() != null) {
               final ListViewData data = (ListViewData) getArguments().getSerializable("data");
-               final Integer image = data.getImage();
-               final String nameDetail = data.getName();
-               final String frameDetail = data.getFrame();
-               final String colorDetail = data.getColorr();
-               final String typeDetail = data.getType();
-               final Double priceDetail = data.getPrice();
+                Integer image = data.getImage();
+                String nameDetail = data.getName();
+                String frameDetail = data.getFrame();
+                String colorDetail = data.getColorr();
+                String typeDetail = data.getType();
+                Double priceDetail = data.getPrice();
 
               ImageView imag = view.findViewById(R.id.imageDetail);
             imag.setImageResource(image);
