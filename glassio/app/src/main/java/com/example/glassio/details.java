@@ -30,8 +30,8 @@ public class details extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_details, container, false);
+        dataWish = new ArrayList<>();
         if(getArguments() != null) {
-            dataWish = new ArrayList<>();
               final ListViewData data = (ListViewData) getArguments().getSerializable("data");
                final Integer image = data.getImage();
                final String nameDetail = data.getName();
@@ -57,9 +57,7 @@ public class details extends Fragment {
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    Bundle args = new Bundle();
-                    args.putSerializable("info", dataWish);
-                    dataWish.add(new ListViewData(nameDetail,image,priceDetail,frameDetail,colorDetail,typeDetail));
+                    dataWish.add(new ListViewData(data.getName(),data.getImage(),data.getPrice(),data.getFrame(),data.getColorr(),data.getType()));
                 }
             });
         }
