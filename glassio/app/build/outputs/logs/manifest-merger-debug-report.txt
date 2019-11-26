@@ -4,7 +4,7 @@ ADDED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\Andr
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml:2:1-29:12
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml:2:1-29:12
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml:2:1-29:12
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\3041ca4a5e57e70ba2ccc44d19f25c82\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cd4f981d1f0dfb047b7b5e1094e8611d\jetified-navigation-ui-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\1964611a1907e3ea07b40ce4c516c284\legacy-support-v4-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -119,8 +119,8 @@ uses-sdk
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\W0730752\Downloads\Android-Project\glassio\app\src\main\AndroidManifest.xml
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\3041ca4a5e57e70ba2ccc44d19f25c82\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\3041ca4a5e57e70ba2ccc44d19f25c82\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cd4f981d1f0dfb047b7b5e1094e8611d\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.navigation:navigation-ui:2.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cd4f981d1f0dfb047b7b5e1094e8611d\jetified-navigation-ui-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.0.2] C:\Users\W0730752\.gradle\caches\transforms-2\files-2.1\f6a183f8595ca34f3d5cc99d1f8bc322\appcompat-1.0.2\AndroidManifest.xml:20:5-44

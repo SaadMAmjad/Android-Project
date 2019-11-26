@@ -3,6 +3,7 @@ package com.example.glassio;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -15,12 +16,22 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
 
     private ArrayList<ListViewData> items;
 
+    private OnItemClickListener listener;
+
+    public interface OnItemClickListener{
+        void onItemClick (int position);
+    }
+
+    public void setOnItemClickListener(OnItemClickListener listen){
+        listener = listen;
+    }
+
     public CustomRecyclerViewAdapter(ArrayList<ListViewData> items) {this.items = items;}
 
     @NonNull
     @Override
     public RecyclerView.ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_row, null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycle_row, null );
         CustomViewHolder viewHolder = new CustomViewHolder(view);
         return viewHolder;
     }
@@ -60,6 +71,17 @@ public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
             this.type = view.findViewById(R.id.type);
             this.image = view.findViewById(R.id.imageView2);
             this.price = view.findViewById(R.id.price);
+            view.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    if (listener != null){
+                        int position = getAdapterPosition();
+                        if (position != RecyclerView.NO_POSITION){
+                            listener.onItemClick(position);
+                        }
+                    }
+                }
+            });
         }
 
     }
