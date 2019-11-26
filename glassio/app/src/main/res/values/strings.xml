@@ -6,11 +6,24 @@
     <string name="nav_header_subtitle">By: Crown Coders</string>
     <string name="nav_header_desc">Navigation header</string>
 
+    <string name="whatsHot">What\'s Hot</string>
+    <string name="topSells">Top Sellers</string>
+    <string name="cbTest">Colorblind Test</string>
+    <string name="wishList">Wish List</string>
+    <string name="extra">Extras</string>
+    <string name="credits">Credits</string>
+
     <string name="sort_button_up">Ascending</string>
     <string name="sort_button_down">Descending</string>
+    <string name="cant_see_it">I can\'t see it</string>
 
     <string name="action_colorB">Color Blind Test</string>
     <string name="action_currency">Currency Conversion</string>
 
     <string name="top_sellers">Best Selling</string>
+
+    <string name="cb_advice_title">Uh-Oh</string>
+    <string name="cb_advice_body">Unfortunately we don\'t sell EnChroma glasses.\nYou can learn more by visiting their website.</string>
+    <string name="cb_advice_link">Click here to visit EnChroma website</string>
+
 </resources>
