@@ -16,8 +16,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="189dp"
-        android:layout_height="229dp"
+        android:layout_width="@dimen/image_width"
+        android:layout_height="@dimen/image_height"
         android:layout_marginEnd="@dimen/recycler_margin"
         app:srcCompat="@drawable/glasseseleven" />
 
@@ -55,7 +55,7 @@
         android:id="@+id/price"
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="@dimen/item_descriptors"
+        android:textSize="@dimen/priceSize"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:text="Placeholder" />

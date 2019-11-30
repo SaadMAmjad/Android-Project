@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,9 +8,10 @@
 
     <ImageView
         android:id="@+id/imageDetail"
-        android:layout_width="300dp"
-        android:layout_height="267dp"
+        android:layout_width="@dimen/image_widthDetail"
+        android:layout_height="@dimen/image_heightDetail"
         android:layout_gravity="center"
+        android:layout_marginTop="40dp"
         android:src="@drawable/glasseseight" />
 
     <TextView
@@ -19,39 +19,48 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="@dimen/item_descriptors"
+        android:text="" />
 
-    <TextView
-        android:id="@+id/priceDetail"
-        android:layout_gravity="center"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="TextView" />
+
 
     <TextView
         android:id="@+id/frameDetail"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="@dimen/item_descriptors"
+        android:text="" />
 
     <TextView
         android:id="@+id/colorDetail"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="@dimen/item_descriptors"
+        android:text="" />
     <TextView
         android:id="@+id/typeDetail"
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView" />
+        android:textSize="@dimen/item_descriptors"
+        android:text="" />
 
+    <TextView
+        android:id="@+id/priceDetail"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/priceSize"
+        android:text="" />
     <Button
         android:id="@+id/buttonDetail"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="add to List" />
+        android:textSize="@dimen/item_descriptors"
+        android:text="@string/add_to_list" />
+
+
 
 </LinearLayout>

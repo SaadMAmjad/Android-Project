@@ -25,5 +25,6 @@
     <string name="cb_advice_title">Uh-Oh</string>
     <string name="cb_advice_body">Unfortunately we don\'t sell EnChroma glasses.\nYou can learn more by visiting their website.</string>
     <string name="cb_advice_link">Click here to visit EnChroma website</string>
+    <string name="add_to_list">add to List</string>
 
 </resources>
