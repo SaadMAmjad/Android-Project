@@ -16,13 +16,6 @@
         android:textSize="@dimen/main_title"
         android:textColor="@color/colorPrimary"
         android:text="@string/action_colorB" />
-
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/vp_hight">
-    </androidx.viewpager.widget.ViewPager>
-
     <Button
         android:id="@+id/cantSee"
         android:layout_width="@dimen/image_heightDetail"
@@ -31,6 +24,12 @@
         android:background="@color/colorPrimary"
         android:layout_gravity="center"
         android:text="@string/cant_see_it" />
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/vp"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/vp_hight">
+    </androidx.viewpager.widget.ViewPager>
 
 
 

@@ -20,7 +20,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginRight="5dp"
+            android:layout_marginRight="@dimen/button"
             android:textColor="@color/white"
             android:background="@color/colorPrimary"
             android:text="@string/sort_button_up" />
@@ -31,7 +31,7 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
-            android:layout_marginLeft="5dp"
+            android:layout_marginLeft="@dimen/button"
             android:textColor="@color/white"
             android:background="@color/colorPrimary"
             android:text="@string/sort_button_down" />

@@ -10,14 +10,15 @@
 
     <ImageView
         android:id="@+id/stuff"
-
-        android:layout_width="@dimen/image_widthDetail"
+        android:layout_marginTop="20dp"
+        android:layout_width="@dimen/color_blind_img_LS"
         android:layout_gravity="center"
-        android:layout_height="@dimen/image_heightDetail"
+        android:layout_height="@dimen/color_blind_img_LS"
         android:src="@drawable/dumby" />
 
     <TextView
         android:id="@+id/answer"
+        android:layout_marginStart="4dp"
         android:textSize="@dimen/main_header"
         android:fontFamily="sans-serif-condensed"
         android:layout_width="wrap_content"
