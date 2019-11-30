@@ -12,6 +12,7 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -22,6 +23,9 @@ import java.util.List;
  */
 public class details extends Fragment {
     private Button button;
+
+    // toast info
+
     public static  ArrayList<ListViewData> dataWish = new ArrayList<>();
 
 
@@ -52,16 +56,19 @@ public class details extends Fragment {
             type.setText(typeDetail);
             TextView price = view.findViewById(R.id.priceDetail);
             price.setText(String.valueOf(priceDetail));
-
             button = view.findViewById(R.id.buttonDetail);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
                     dataWish.add(new ListViewData(data.getName(),data.getImage(),data.getPrice(),data.getFrame(),data.getColorr(),data.getType()));
+                    Context context = getContext();
+                    CharSequence text = "this Item has been added to your wish list";
+                    int duration = Toast.LENGTH_SHORT;
+                    Toast toast = Toast.makeText(context, text, duration);
+                    toast.show();
                 }
             });
         }
-
             return view;
     }
 

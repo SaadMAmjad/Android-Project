@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageDetail"
-        android:layout_width="@dimen/image_widthDetail"
-        android:layout_height="@dimen/image_heightDetail"
+        android:layout_width="@dimen/imgD_width_LS"
+        android:layout_height="@dimen/imgD_height_LS"
         android:layout_gravity="center"
         android:layout_marginTop="40dp"
         android:src="@drawable/glasseseight" />
@@ -52,7 +52,7 @@
         android:layout_gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/priceSize"
+        android:textSize="@dimen/priceSize_LS"
         android:text="" />
     <Button
         android:id="@+id/buttonDetail"
