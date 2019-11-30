@@ -52,7 +52,6 @@ public class details extends Fragment {
             type.setText(typeDetail);
             TextView price = view.findViewById(R.id.priceDetail);
             price.setText(String.valueOf(priceDetail));
-
             button = view.findViewById(R.id.buttonDetail);
             button.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -61,7 +60,6 @@ public class details extends Fragment {
                 }
             });
         }
-
             return view;
     }
 

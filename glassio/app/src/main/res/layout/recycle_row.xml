@@ -11,6 +11,7 @@
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
         android:text="Placeholder"
+        android:textColor="@color/colorPrimary"
         android:textAlignment="center"
         android:textSize="@dimen/item_title" />
 
@@ -27,6 +28,7 @@
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/item_descriptors"
+        android:textColor="@color/white"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:text="Placeholder" />
@@ -37,6 +39,7 @@
         android:background="@color/light_gray"
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/item_descriptors"
+        android:textColor="@color/white"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:text="Placeholder" />
@@ -47,6 +50,7 @@
         android:background="@color/light_gray"
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/item_descriptors"
+        android:textColor="@color/white"
         android:layout_width="189dp"
         android:layout_height="50dp"
         android:text="Placeholder" />
@@ -56,6 +60,7 @@
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/priceSize"
+        android:textColor="@color/colorPrimary"
         android:layout_width="189dp"
         android:layout_height="wrap_content"
         android:text="Placeholder" />

@@ -10,6 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:layout_weight="1"
+        android:layout_marginTop="@dimen/linearL_Margin"
         android:layout_gravity="center"
         android:orientation="horizontal">
 
@@ -19,6 +20,9 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:layout_marginRight="5dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:text="@string/sort_button_up" />
 
         <Button
@@ -27,6 +31,9 @@
             android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:text="@string/sort_button_down" />
     </LinearLayout>
     <ListView

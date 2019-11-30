@@ -56,8 +56,11 @@
         android:text="" />
     <Button
         android:id="@+id/buttonDetail"
-        android:layout_width="match_parent"
+        android:layout_width="@dimen/image_heightDetail"
+        android:layout_gravity="center"
         android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:textColor="@color/white"
         android:textSize="@dimen/item_descriptors"
         android:text="@string/add_to_list" />
 

@@ -16,4 +16,5 @@
     <dimen name="image_height">229dp</dimen>
     <dimen name="image_widthDetail">450dp</dimen>
     <dimen name="image_heightDetail">350dp</dimen>
+    <dimen name="linearL_Margin">20dp</dimen>
 </resources>
