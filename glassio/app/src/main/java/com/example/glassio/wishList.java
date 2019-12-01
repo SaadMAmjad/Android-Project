@@ -25,7 +25,8 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Yonis Sheekh
+ * @date 2019/12/01
  */
 public class wishList extends Fragment {
 

@@ -3,6 +3,11 @@ package com.example.glassio;
 
 import java.io.Serializable;
 
+/**
+ * @author Yonis Sheekh
+ * @date 2019/12/01
+ */
+
 public class ListViewData implements Serializable {
 
     private String name;
