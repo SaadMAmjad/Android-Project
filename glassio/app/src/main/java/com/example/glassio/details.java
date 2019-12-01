@@ -1,36 +1,34 @@
 package com.example.glassio;
 import android.content.Context;
 import android.os.Bundle;
-
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
-import java.util.List;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author yonis sheekh
+ * @date 2019/11/18
+ * purpose of this class is to load the item in a detailed fragment
+ * by itself with no other list items
  */
+
 public class details extends Fragment {
     private Button button;
 
-    // toast info
 
     public static  ArrayList<ListViewData> dataWish = new ArrayList<>();
 
 
-
     @Override
+
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_details, container, false);
@@ -58,6 +56,9 @@ public class details extends Fragment {
             price.setText(String.valueOf(priceDetail));
             button = view.findViewById(R.id.buttonDetail);
             button.setOnClickListener(new View.OnClickListener() {
+                /**
+                 * @param view
+                 */
                 @Override
                 public void onClick(View view) {
                     dataWish.add(new ListViewData(data.getName(),data.getImage(),data.getPrice(),data.getFrame(),data.getColorr(),data.getType()));
@@ -69,6 +70,7 @@ public class details extends Fragment {
                 }
             });
         }
+
             return view;
     }
 

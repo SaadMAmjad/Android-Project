@@ -34,7 +34,17 @@ public class wishList extends Fragment {
         // Required empty public constructor
     }
 
-
+    /**
+     * @date 2019/11/25
+     * @author yonis
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     * a class that mimics a wish list
+     * items can be added from recycler view items and list view items
+     * items can also be removed from wish list
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -47,6 +57,14 @@ public class wishList extends Fragment {
         listView.setAdapter(adapter);
 
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            /**
+             *
+             * @param adapterView
+             * @param view
+             * @param position
+             * @param id
+             * @return true
+             */
             @Override
             public boolean onItemLongClick(final AdapterView<?> adapterView, View view, int position, long id) {
                 final int deletedItem = position;
@@ -75,6 +93,14 @@ public class wishList extends Fragment {
             super(context, 0, items);
 
         }
+
+        /**
+         *
+         * @param position
+         * @param convertView
+         * @param parent
+         * @return convertView
+         */
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {

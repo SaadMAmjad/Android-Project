@@ -21,9 +21,6 @@ import java.util.Collections;
 import java.util.Comparator;
 
 
-/**
- * A simple {@link Fragment} subclass.
- */
 public class topSells extends Fragment {
 
     private Button priceBtn;
@@ -35,6 +32,18 @@ public class topSells extends Fragment {
     public topSells() {
     }
 
+    /**
+     * @author yonis sheekh
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     *@date   2019/11/13
+     * this class is for the sales class
+     * will show a collection of glasses
+     * has two methods at the bottom
+     * will sort the glasses in ascending and descending order
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -44,6 +53,7 @@ public class topSells extends Fragment {
 
           ListView listView = view.findViewById(R.id.list);
         // A LIST OF THE GLASSES NEEDED
+
         data = new ArrayList<>();
         data.add(new ListViewData("The Aviator", R.drawable.glassesone, 119.99,"Metal","Black","Sunglasses"));
         data.add(new ListViewData("Magnifier", R.drawable.glasseseight, 199.99,"Metal","Clear","Prescription"));
@@ -64,6 +74,7 @@ public class topSells extends Fragment {
                 sortArrayList();
             }
         });
+
         priceBtn2 = view.findViewById(R.id.sort2);
         priceBtn2.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,11 +82,17 @@ public class topSells extends Fragment {
                 reversed();
             }
         });
-        //CONNECTING  THE LIST VIEW TO THE CUSTOM VIEW ADAPTER THAT WILL BE MADE BELLOW
-         adapter = new CustomAdapter(getContext(), data);
 
+         adapter = new CustomAdapter(getContext(), data);
         listView.setAdapter(adapter);
                listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                   /**
+                    *
+                    * @param parent
+                    * @param view
+                    * @param position
+                    * @param id
+                    */
            @Override
            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                Bundle args = new Bundle();
@@ -87,11 +104,16 @@ public class topSells extends Fragment {
         return view;
     }
     //CREATING A CUSTOM VIEW ADAPTER FOR THE LIST OF GLASSES
+
     public static class CustomAdapter extends ArrayAdapter<ListViewData> {
         protected CustomAdapter(@NonNull Context context, ArrayList<ListViewData> items) {
             super(context, 0, items);
 
         }
+        /**
+         * @return convertView
+         * class for Custom listView Adapter adapter
+         */
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -116,7 +138,10 @@ public class topSells extends Fragment {
             return  convertView;
         }
     }
-    //THIS FUNCTION COMPARES THE ITEMS IN THE LIST AND SORTS THEM ACCORDING TO THE PRICE FROM LOWEST TO HIGHEST
+
+    /**
+     * method to sort items
+     */
     private void sortArrayList(){
             Collections.sort(data, new Comparator<ListViewData>() {
                 @Override
@@ -126,7 +151,11 @@ public class topSells extends Fragment {
             });
         adapter.notifyDataSetChanged();
     }
-    //AFTER HOURS OF BEING AWAKE LAST NIGHT WE FINALLY GOT THE COLLECTION TO REVERSE FROM HIGHEST TO LOWEST
+
+    /**
+     * reverse the sorted items
+     */
+    //AFTER HOURS OF BEING AWAKE LAST NIGHT WE FINALLY GOT THE COLLECTION TO REVERSE
     //PS ANDROID DOCS READ MORE OF THEM
     private void reversed(){
         Collections.reverse(data);
