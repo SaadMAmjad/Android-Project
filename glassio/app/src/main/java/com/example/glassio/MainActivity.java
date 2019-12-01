@@ -18,44 +18,6 @@ import android.view.Menu;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Override
-    public void finish() {
-        super.finish();
-        onLeaveThisActivity();
-    }
-
-    protected void onLeaveThisActivity() {
-        overridePendingTransition(R.anim.in, R.anim.out);
-    }
-
-    @Override
-    public void startActivity(Intent intent) {
-        super.startActivity(intent);
-        onStartNewActivity();
-    }
-
-    @Override
-    public void startActivity(Intent intent, Bundle options) {
-        super.startActivity(intent, options);
-        onStartNewActivity();
-    }
-
-    @Override
-    public void startActivityForResult(Intent intent, int requestCode) {
-        super.startActivityForResult(intent, requestCode);
-        onStartNewActivity();
-    }
-
-    @Override
-    public void startActivityForResult(Intent intent, int requestCode, Bundle options) {
-        super.startActivityForResult(intent, requestCode, options);
-        onStartNewActivity();
-    }
-
-    protected void onStartNewActivity() {
-        overridePendingTransition(R.anim.in, R.anim.out);
-    }
-
     private AppBarConfiguration mAppBarConfiguration;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
