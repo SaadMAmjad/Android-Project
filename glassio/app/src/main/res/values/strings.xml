@@ -27,5 +27,11 @@
         \n\nUnfortunately we don\'t sell EnChroma glasses or lenses.\n\nYou can learn more by visiting their website.</string>
     <string name="cb_advice_link">Click here to visit EnChroma website</string>
     <string name="add_to_list">add to List</string>
+    <string name="contacts">contacts</string>
+    <string name="phone">call Us</string>
+    <string name="location">Location</string>
+    <string name="email">Email Us</string>
+    <string name="twitter">Vist Our Twitter</string>
+
 
 </resources>
