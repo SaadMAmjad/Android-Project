@@ -61,6 +61,10 @@ INJECTED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\Androi
 		INJECTED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\AndroidManifest.xml:4:5-78
+	android:name
+		ADDED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\AndroidManifest.xml:4:22-76
 application
 ADDED from C:\Users\yonis\Desktop\Android-Project\glassio\app\src\main\AndroidManifest.xml:5:5-27:19
 MERGED from [com.google.android.material:material:1.0.0] C:\Users\yonis\.gradle\caches\transforms-2\files-2.1\cb634fe4b4d1fdfcd5255e485d30a0c1\material-1.0.0\AndroidManifest.xml:22:5-20
