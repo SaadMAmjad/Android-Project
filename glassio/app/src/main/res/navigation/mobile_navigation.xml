@@ -17,8 +17,8 @@
         <action
             android:id="@+id/action_nav_home_to_details"
             app:destination="@id/details"
-            app:enterAnim="@anim/in"
-            app:exitAnim="@anim/out"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
             app:popEnterAnim="@anim/in"
             app:popExitAnim="@anim/out" />
     </fragment>
@@ -35,8 +35,8 @@
         <action
             android:id="@+id/action_nav_suggestions_to_cbAdvice"
             app:destination="@+id/cbAdvice"
-            app:enterAnim="@anim/in"
-            app:exitAnim="@anim/out"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
             app:popEnterAnim="@anim/in"
             app:popExitAnim="@anim/out" />
     </fragment>
@@ -48,8 +48,8 @@
         <action
             android:id="@+id/action_nav_topSells_to_details"
             app:destination="@id/details"
-            app:enterAnim="@anim/in"
-            app:exitAnim="@anim/out"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
             app:popEnterAnim="@anim/in"
             app:popExitAnim="@anim/out" />
     </fragment>
