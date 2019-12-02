@@ -12,6 +12,7 @@
     <string name="wishList">Wish List</string>
     <string name="extra">Extras</string>
     <string name="credits">Credits</string>
+    <string name="contacts">Contacts</string>
 
     <string name="sort_button_up">Ascending</string>
     <string name="sort_button_down">Descending</string>
@@ -23,9 +24,13 @@
     <string name="top_sellers">Best Selling</string>
 
     <string name="cb_advice_title">Uh-Oh</string>
-    <string name="cb_advice_body">Colorblindness is a rare condition, you can get color corrective/filtering lenses to help mitigate this issue.
-        \n\nUnfortunately we don\'t sell EnChroma glasses or lenses.\n\nYou can learn more by visiting their website.</string>
+    <string name="cb_advice_body">Unfortunately we don\'t sell EnChroma glasses.\nYou can learn more by visiting their website.</string>
     <string name="cb_advice_link">Click here to visit EnChroma website</string>
     <string name="add_to_list">add to List</string>
+    <string name="email">Email Us</string>
+    <string name="location">location</string>
+    <string name="text">blah</string>
+    <string name="phone">Call Us</string>
+    <string name="twitter">Visit Our Twitter</string>
 
 </resources>
