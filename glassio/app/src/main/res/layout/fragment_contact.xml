@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".Contact">
+
+    <Button
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/buttonMargin"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/white"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/phone" />
+
+    <Button
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@color/white"
+        android:textSize="@dimen/button_text"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/buttonMargin"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/text" />
+
+    <Button
+        android:id="@+id/location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/buttonMargin"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/location" />
+    <Button
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/buttonMargin"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/email" />
+    <Button
+        android:id="@+id/twitter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorPrimary"
+        android:textSize="@dimen/button_text"
+        android:textColor="@color/white"
+        android:layout_margin="@dimen/buttonMargin"
+        android:padding="@dimen/buttonPadding"
+        android:text="@string/twitter" />
+</LinearLayout>

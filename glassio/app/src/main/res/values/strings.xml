@@ -12,6 +12,7 @@
     <string name="wishList">Wish List</string>
     <string name="extra">Extras</string>
     <string name="credits">Credits</string>
+    <string name="contacts">Contacts</string>
 
     <string name="sort_button_up">Ascending</string>
     <string name="sort_button_down">Descending</string>
@@ -26,5 +27,10 @@
     <string name="cb_advice_body">Unfortunately we don\'t sell EnChroma glasses.\nYou can learn more by visiting their website.</string>
     <string name="cb_advice_link">Click here to visit EnChroma website</string>
     <string name="add_to_list">add to List</string>
+    <string name="email">Email Us</string>
+    <string name="location">location</string>
+    <string name="text">blah</string>
+    <string name="phone">Call Us</string>
+    <string name="twitter">Visit Our Twitter</string>
 
 </resources>
