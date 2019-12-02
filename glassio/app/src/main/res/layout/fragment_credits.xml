@@ -1,14 +1,33 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".credits">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="credits" />
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/main_title"
+        android:fontFamily="sans-serif-condensed"
+        android:gravity="center"
+        android:text="@string/credits"
+        android:textColor="@color/colorPrimary"/>
 
-</FrameLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/main_header"
+            android:fontFamily="sans-serif-condensed"
+            android:text="@string/credits_body"
+            android:textColor="@color/colorPrimary"/>
+
+    </ScrollView>
+
+
+</LinearLayout>

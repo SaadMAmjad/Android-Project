@@ -19,10 +19,6 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
-
-/**
- * A simple {@link Fragment} subclass.
- */
 public class Contact extends Fragment {
 
     private String [] email = {"yonis.sheekh01@stclairconnect.ca"};

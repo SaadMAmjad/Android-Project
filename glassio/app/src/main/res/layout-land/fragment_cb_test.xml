@@ -1,36 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".cbTest">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:id="@+id/title"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="@dimen/main_title"
-        android:textColor="@color/colorPrimary"
-        android:text="@string/action_colorB" />
-    <Button
-        android:id="@+id/cantSee"
-        android:layout_width="@dimen/image_heightDetail"
-        android:layout_height="wrap_content"
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
-        android:layout_gravity="center"
-        android:text="@string/cant_see_it" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="center"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="@dimen/main_title"
+                android:textColor="@color/colorPrimary"
+                android:text="@string/action_colorB" />
+            <Button
+                android:id="@+id/cantSee"
+                android:layout_width="@dimen/image_heightDetail"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
+                android:layout_gravity="center"
+                android:text="@string/cant_see_it" />
 
-    <androidx.viewpager.widget.ViewPager
-        android:id="@+id/vp"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/vp_hight">
-    </androidx.viewpager.widget.ViewPager>
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/vp"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/vp_hight">
+            </androidx.viewpager.widget.ViewPager>
+        </LinearLayout>
 
-
-
-</LinearLayout>
+</ScrollView>
