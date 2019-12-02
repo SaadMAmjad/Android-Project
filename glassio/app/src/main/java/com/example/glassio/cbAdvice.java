@@ -15,7 +15,11 @@ import android.widget.Button;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Saad Amjad
+ * @description simple destination with button to link to EnChroma website
+ * @param Button link
+ * @return view
+ * @date 2019/12/01
  */
 public class cbAdvice extends Fragment {
 

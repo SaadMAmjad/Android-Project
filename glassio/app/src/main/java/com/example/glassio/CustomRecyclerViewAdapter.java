@@ -3,7 +3,6 @@ package com.example.glassio;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,6 +10,13 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
+
+/**
+ * @author Saad Amjad
+ * @param String name, String frame, String type, String color, int image, Double price
+ * @description Adapter to creat recycler views
+ * @date 2019/12/01
+ */
 
 public class CustomRecyclerViewAdapter extends RecyclerView.Adapter {
 
