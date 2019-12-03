@@ -22,7 +22,8 @@ import java.util.Comparator;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Yonis Sheekh
+ * @date 2019/12/01
  */
 public class topSells extends Fragment {
 
@@ -54,7 +55,7 @@ public class topSells extends Fragment {
         data.add(new ListViewData("Shades V", R.drawable.glasseseleven, 49.99,"Plastic","Light Black","Sunglasses"));
         data.add(new ListViewData("The Illusion", R.drawable.glassestwo, 89.99,"Plastic","Clear","Prescription"));
         data.add(new ListViewData("Minimalist", R.drawable.glassesthree, 99.99,"Plastic","Clear","Prescription"));
-        data.add(new ListViewData("Down the Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
+        data.add(new ListViewData("The Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
         data.add(new ListViewData("Angular", R.drawable.glassesnine, 149.99,"Metal","Clear","Prescription"));
 
         priceBtn = view.findViewById(R.id.sort);

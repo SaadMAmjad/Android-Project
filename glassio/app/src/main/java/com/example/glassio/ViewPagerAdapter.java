@@ -10,11 +10,15 @@ import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
-
 /**
- * A simple {@link Fragment} subclass.
+ * @author Saad Amjad
+ * @description viewpager adapter class, contains an image (the colorblind tests) and text (to ask if you can see it)
+ * @param int mParam, String mParam2
+ * @date 2019/12/01
  */
 public class ViewPagerAdapter extends Fragment {
+
+
 
     private static final String Param = "img";
     private static final String Param2 = "placeholderText";

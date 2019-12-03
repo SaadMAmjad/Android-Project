@@ -20,15 +20,17 @@
             android:id="@+id/nav_shoppingCart"
             android:icon="@drawable/ic_star_black_24dp"
             android:title="@string/wishList" />
+
+        <item
+            android:id="@+id/nav_contact"
+            android:icon="@drawable/ic_import_contacts_black_24dp"
+            android:title="@string/contacts" />
+
+        <item
+            android:id="@+id/nav_credits"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="@string/credits" />
+
+
     </group>
-
-    <item android:title="@string/extra">
-        <menu>
-            <item
-                android:id="@+id/nav_credits"
-                android:icon="@drawable/ic_group_black_24dp"
-                android:title="@string/credits" />
-        </menu>
-    </item>
-
 </menu>

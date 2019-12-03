@@ -1,12 +1,10 @@
 package com.example.glassio;
 
 
-import android.icu.text.Transliterator;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
@@ -17,12 +15,14 @@ import androidx.recyclerview.widget.StaggeredGridLayoutManager;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.List;
 import java.util.Random;
 
-
 /**
- * A simple {@link Fragment} subclass.
+ * @author Saad Amjad
+ * @description app start/home screen, contains a randomized recycler view showing a random selection of glasses
+ * @param ArrayList<ListViewData> items
+ * @return view
+ * @date 2019/12/01
  */
 public class home extends Fragment {
 
@@ -39,11 +39,12 @@ public class home extends Fragment {
         // Inflate the layout for this fragment
         final   View view = inflater.inflate(R.layout.fragment_home, container, false);
 
-         items = new ArrayList<>();
+        items = new ArrayList<>();
+
         items.add(new ListViewData("On the Range", R.drawable.glassesseven, 29.99,"Plastic","Pink","Safety/Utility"));
         items.add(new ListViewData("Magnifier", R.drawable.glasseseight, 199.99,"Metal","Clear","Prescription"));
         items.add(new ListViewData("The Aviator", R.drawable.glassesone, 119.99,"Metal","Black","Sunglasses"));
-        items.add(new ListViewData("Down the Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
+        items.add(new ListViewData("The Mountain", R.drawable.glassestwelve, 59.99,"Plastic","Light Black","Ski Goggles"));
         items.add(new ListViewData("The Adapter", R.drawable.glassesten, 239.99,"Metal","Light Green","Transformer"));
         items.add(new ListViewData("Shades V", R.drawable.glasseseleven, 49.99,"Plastic","Light Black","Sunglasses"));
         items.add(new ListViewData("Average Joe's", R.drawable.glassesfive, 79.99,"Plastic","Clear","Prescription"));

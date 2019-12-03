@@ -1,16 +1,21 @@
 package com.example.glassio;
 
 
+import android.app.AlertDialog;
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -20,7 +25,8 @@ import java.util.ArrayList;
 
 
 /**
- * A simple {@link Fragment} subclass.
+ * @author Yonis Sheekh
+ * @date 2019/12/01
  */
 public class wishList extends Fragment {
 
@@ -40,6 +46,27 @@ public class wishList extends Fragment {
         adapter = new CustomAdapter(getContext(), details.dataWish);
 
         listView.setAdapter(adapter);
+
+        listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
+            @Override
+            public boolean onItemLongClick(final AdapterView<?> adapterView, View view, int position, long id) {
+                final int deletedItem = position;
+                        new AlertDialog.Builder(getContext())
+                                .setTitle("DELETE ITEM")
+                                .setMessage("Do you want to delete this item " +
+                                        "from the list")
+                                .setPositiveButton("yes", new DialogInterface.OnClickListener() {
+                                    @Override
+                                    public void onClick(DialogInterface dialogInterface, int i) {
+                                        details.dataWish.remove(deletedItem);
+                                        adapter.notifyDataSetChanged();
+                                    }
+                                })
+                                .setNegativeButton("No",null)
+                                .show();
+                        return true;
+            }
+        });
 
         return view;
         }

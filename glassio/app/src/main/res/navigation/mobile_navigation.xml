@@ -16,7 +16,11 @@
         tools:layout="@layout/fragment_home" >
         <action
             android:id="@+id/action_nav_home_to_details"
-            app:destination="@id/details" />
+            app:destination="@id/details"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
+            app:popEnterAnim="@anim/in"
+            app:popExitAnim="@anim/out" />
     </fragment>
     <fragment
         android:id="@+id/nav_shoppingCart"
@@ -30,7 +34,11 @@
         tools:layout="@layout/fragment_cb_test" >
         <action
             android:id="@+id/action_nav_suggestions_to_cbAdvice"
-            app:destination="@+id/cbAdvice" />
+            app:destination="@+id/cbAdvice"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
+            app:popEnterAnim="@anim/in"
+            app:popExitAnim="@anim/out" />
     </fragment>
     <fragment
         android:id="@+id/nav_topSells"
@@ -39,7 +47,11 @@
         tools:layout="@layout/fragment_top_sells" >
         <action
             android:id="@+id/action_nav_topSells_to_details"
-            app:destination="@id/details" />
+            app:destination="@id/details"
+            app:enterAnim="@anim/in_pop"
+            app:exitAnim="@anim/out_pop"
+            app:popEnterAnim="@anim/in"
+            app:popExitAnim="@anim/out" />
     </fragment>
     <fragment
         android:id="@+id/details"
@@ -49,6 +61,11 @@
     <fragment
         android:id="@+id/cbAdvice"
         android:name="com.example.glassio.cbAdvice"
-        android:label="Advice"
+        android:label="Our Recommendation"
         tools:layout="@layout/fragment_cb_advice" />
+    <fragment
+        android:id="@+id/nav_contact"
+        android:name="com.example.glassio.Contact"
+        android:label="Contact Us"
+        tools:layout="@layout/fragment_contact" />
 </navigation>

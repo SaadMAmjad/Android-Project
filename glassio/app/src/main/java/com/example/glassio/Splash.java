@@ -9,6 +9,11 @@ import java.util.TimerTask;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+/**
+ * @author Yonis Sheekh
+ * @date 2019/12/01
+ */
+
 public class Splash extends AppCompatActivity {
 
     @Override

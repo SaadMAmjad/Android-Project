@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".details">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageDetail"
+            android:layout_width="@dimen/imgD_width_LS"
+            android:layout_height="@dimen/imgD_height_LS"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/glasseseight" />
+
+        <TextView
+            android:id="@+id/nameDetail"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_descriptors"
+            android:text="" />
+
+
+
+        <TextView
+            android:id="@+id/frameDetail"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_descriptors"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/colorDetail"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_descriptors"
+            android:text="" />
+        <TextView
+            android:id="@+id/typeDetail"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/item_descriptors"
+            android:text="" />
+
+        <TextView
+            android:id="@+id/priceDetail"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/priceSize_LS"
+            android:text="" />
+        <Button
+            android:id="@+id/buttonDetail"
+            android:layout_width="@dimen/image_heightDetail"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/white"
+            android:textSize="@dimen/item_descriptors"
+            android:text="@string/add_to_list" />
+
+        </LinearLayout>
+
+</ScrollView>

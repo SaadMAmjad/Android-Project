@@ -7,33 +7,40 @@
     tools:context=".topSells">
 
     <LinearLayout
-        android:layout_width="393dp"
+        android:layout_width="match_parent"
         android:layout_height="78dp"
         android:layout_weight="1"
+        android:layout_marginTop="@dimen/linearL_Margin"
         android:layout_gravity="center"
         android:orientation="horizontal">
 
         <Button
             android:id="@+id/sort2"
-            android:layout_width="214dp"
-            android:layout_height="99dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:layout_marginRight="@dimen/button"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:text="@string/sort_button_up" />
 
         <Button
             android:id="@+id/sort"
-            android:layout_width="214dp"
-            android:layout_height="99dp"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
             android:layout_gravity="center"
             android:layout_weight="1"
+            android:layout_marginLeft="@dimen/button"
+            android:textColor="@color/white"
+            android:background="@color/colorPrimary"
             android:text="@string/sort_button_down" />
     </LinearLayout>
-
-
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_weight="1" />
+        android:layout_weight="3" />
+
+
 </LinearLayout>

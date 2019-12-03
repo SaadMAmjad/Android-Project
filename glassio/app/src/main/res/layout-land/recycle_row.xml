@@ -6,19 +6,19 @@
 
     <TextView
         android:id="@+id/name"
-        android:layout_width="189dp"
-        android:layout_height="111dp"
+        android:layout_width="@dimen/recycler_view_landscape_width"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
         android:text="Placeholder"
-        android:textColor="@color/colorPrimary"
         android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
         android:textSize="@dimen/item_title" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="@dimen/image_width"
-        android:layout_height="@dimen/image_height"
+        android:layout_width="@dimen/recycler_view_landscape_width"
+        android:layout_height="160dp"
         android:layout_marginEnd="@dimen/recycler_margin"
         app:srcCompat="@drawable/glasseseleven" />
 
@@ -29,9 +29,9 @@
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/item_descriptors"
         android:textColor="@color/white"
-        android:layout_width="189dp"
+        android:layout_width="@dimen/recycler_view_landscape_width"
         android:layout_height="wrap_content"
-        android:text="Placeholder" />
+        android:text="" />
 
     <TextView
         android:id="@+id/colorr"
@@ -40,29 +40,29 @@
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/item_descriptors"
         android:textColor="@color/white"
-        android:layout_width="189dp"
+        android:layout_width="@dimen/recycler_view_landscape_width"
         android:layout_height="wrap_content"
-        android:text="Placeholder" />
+        android:text="" />
 
     <TextView
         android:id="@+id/type"
+        android:layout_width="@dimen/recycler_view_landscape_width"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/recycler_margin"
         android:background="@color/light_gray"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="@dimen/item_descriptors"
+        android:text=""
         android:textColor="@color/white"
-        android:layout_width="189dp"
-        android:layout_height="50dp"
-        android:text="Placeholder" />
+        android:textSize="@dimen/item_descriptors" />
 
     <TextView
         android:id="@+id/price"
+        android:layout_width="@dimen/recycler_view_landscape_width"
+        android:layout_height="wrap_content"
         android:layout_marginEnd="@dimen/recycler_margin"
         android:fontFamily="sans-serif-condensed"
-        android:textSize="@dimen/priceSize"
+        android:text=""
         android:textColor="@color/colorPrimary"
-        android:layout_width="189dp"
-        android:layout_height="wrap_content"
-        android:text="Placeholder" />
+        android:textSize="@dimen/priceSize_LS" />
 
 </LinearLayout>

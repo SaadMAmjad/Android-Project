@@ -14,9 +14,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 
-
 /**
- * A simple {@link Fragment} subclass.
+ * @author Saad Amjad
+ * @description viewPager for the color blind test with button in case one cannot see the image
+ * @param Button failed
+ * @return onCreateView returns view, getCount returns 12
+ * @date 2019/12/01
  */
 public class cbTest extends Fragment {
 

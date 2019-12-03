@@ -6,7 +6,6 @@
     tools:context=".home"
     android:orientation="vertical">
 
-    <!-- TODO: Update blank fragment layout -->
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
@@ -14,16 +13,8 @@
         android:textAlignment="center"
         android:fontFamily="sans-serif-condensed"
         android:textSize="@dimen/main_title"
+        android:layout_marginBottom="@dimen/titleRecycler"
         android:text="@string/nav_header_title" />
-
-    <TextView
-        android:id="@+id/header"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="2dp"
-        android:textSize="@dimen/main_header"
-        android:fontFamily="serif"
-        android:text="@string/top_sellers" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="5dp"
