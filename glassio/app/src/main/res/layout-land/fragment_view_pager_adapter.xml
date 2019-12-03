@@ -14,7 +14,7 @@
         android:layout_width="@dimen/color_blind_img_LS"
         android:layout_gravity="center"
         android:layout_height="@dimen/color_blind_img_LS"
-        android:src="@drawable/dumby" />
+        android:src="@drawable/glasseseight" />
 
     <TextView
         android:id="@+id/answer"

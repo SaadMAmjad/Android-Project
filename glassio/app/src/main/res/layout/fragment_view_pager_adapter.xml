@@ -14,7 +14,7 @@
         android:layout_width="@dimen/image_widthDetail"
         android:layout_gravity="center"
         android:layout_height="@dimen/image_heightDetail"
-        android:src="@drawable/dumby" />
+        android:src="@drawable/glasseseight" />
 
     <TextView
         android:id="@+id/answer"
