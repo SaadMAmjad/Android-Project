@@ -22,16 +22,25 @@ public class details extends Fragment {
 
     // toast info
 
+
     public static  ArrayList<ListViewData> dataWish = new ArrayList<>();
 
 
-
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_details, container, false);
 
+
         if(getArguments() != null) {
+
               final ListViewData data = (ListViewData) getArguments().getSerializable("data");
                 Integer image = data.getImage();
                 String nameDetail = data.getName();
@@ -53,7 +62,12 @@ public class details extends Fragment {
             TextView price = view.findViewById(R.id.priceDetail);
             price.setText(String.valueOf(priceDetail));
             button = view.findViewById(R.id.buttonDetail);
+
             button.setOnClickListener(new View.OnClickListener() {
+                /**
+                 *
+                 * @param view
+                 */
                 @Override
                 public void onClick(View view) {
                     dataWish.add(new ListViewData(data.getName(),data.getImage(),data.getPrice(),data.getFrame(),data.getColorr(),data.getType()));
