@@ -37,6 +37,13 @@ public class topSells extends Fragment {
     }
 
 
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -88,11 +95,20 @@ public class topSells extends Fragment {
         return view;
     }
     //CREATING A CUSTOM VIEW ADAPTER FOR THE LIST OF GLASSES
+
     public static class CustomAdapter extends ArrayAdapter<ListViewData> {
         protected CustomAdapter(@NonNull Context context, ArrayList<ListViewData> items) {
             super(context, 0, items);
 
         }
+
+        /**
+         *
+         * @param position
+         * @param convertView
+         * @param parent
+         * @return convertView
+         */
         @NonNull
         @Override
         public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -118,6 +134,7 @@ public class topSells extends Fragment {
         }
     }
     //THIS FUNCTION COMPARES THE ITEMS IN THE LIST AND SORTS THEM ACCORDING TO THE PRICE FROM LOWEST TO HIGHEST
+
     private void sortArrayList(){
             Collections.sort(data, new Comparator<ListViewData>() {
                 @Override

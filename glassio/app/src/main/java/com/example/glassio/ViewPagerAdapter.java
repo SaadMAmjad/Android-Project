@@ -13,7 +13,6 @@ import androidx.fragment.app.Fragment;
 /**
  * @author Saad Amjad
  * @description viewpager adapter class, contains an image (the colorblind tests) and text (to ask if you can see it)
- * @param int mParam, String mParam2
  * @date 2019/12/01
  */
 public class ViewPagerAdapter extends Fragment {
@@ -32,6 +31,12 @@ public class ViewPagerAdapter extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     *
+     * @param placeHolder
+     * @param img
+     * @return fragment
+     */
     public static ViewPagerAdapter newInstance(String placeHolder, int img) {
         ViewPagerAdapter fragment = new ViewPagerAdapter();
         Bundle args = new Bundle();
@@ -50,6 +55,13 @@ public class ViewPagerAdapter extends Fragment {
         }
     }
 
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

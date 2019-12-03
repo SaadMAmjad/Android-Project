@@ -21,6 +21,7 @@ import android.widget.Toast;
 
 public class Contact extends Fragment {
 
+
     private String [] email = {"yonis.sheekh01@stclairconnect.ca"};
     public static final int PERMISSION_LOCATION = 1;
     public Contact() {
@@ -28,6 +29,13 @@ public class Contact extends Fragment {
     }
 
 
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -36,7 +44,12 @@ public class Contact extends Fragment {
         View view = inflater.inflate(R.layout.fragment_contact, container, false);
 
         Button emailButton = view.findViewById(R.id.email);
+
         emailButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_SENDTO);
@@ -49,6 +62,10 @@ public class Contact extends Fragment {
 
         Button phoneButton = view.findViewById(R.id.phone);
         phoneButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param view
+             */
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(Intent.ACTION_DIAL);
@@ -61,6 +78,10 @@ public class Contact extends Fragment {
 
         Button websiteButton = view.findViewById(R.id.twitter);
         websiteButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param view
+             */
             @Override
             public void onClick(View view) {
 
@@ -75,6 +96,10 @@ public class Contact extends Fragment {
 
         Button locationButton = view.findViewById(R.id.location);
         locationButton.setOnClickListener(new View.OnClickListener() {
+            /**
+             *
+             * @param view
+             */
             @Override
             public void onClick(View view) {
 

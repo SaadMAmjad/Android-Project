@@ -35,6 +35,13 @@ public class wishList extends Fragment {
         // Required empty public constructor
     }
 
+    /**
+     *
+     * @param inflater
+     * @param container
+     * @param savedInstanceState
+     * @return view
+     */
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -45,8 +52,8 @@ public class wishList extends Fragment {
 
         adapter = new CustomAdapter(getContext(), details.dataWish);
 
-        listView.setAdapter(adapter);
 
+        listView.setAdapter(adapter);
         listView.setOnItemLongClickListener(new AdapterView.OnItemLongClickListener() {
             @Override
             public boolean onItemLongClick(final AdapterView<?> adapterView, View view, int position, long id) {
