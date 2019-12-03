@@ -51,7 +51,7 @@
 
     <string name="top_sellers">Best Selling</string>
 
-    <string name="cb_advice_title">Uh-Oh</string>
+    <string name="cb_advice_title">Results</string>
     <string name="cb_advice_body">Colorblindness is a rare condition, you can get color corrective/filtering lenses to help mitigate this issue.
         \n\nUnfortunately we don\'t sell EnChroma glasses or lenses.\n\nYou can learn more by visiting their website.</string>
     <string name="cb_advice_link">Click here to visit EnChroma website</string>
