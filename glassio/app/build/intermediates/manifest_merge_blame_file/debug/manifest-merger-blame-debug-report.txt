@@ -29,47 +29,48 @@
 19-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:9:9-54
 20        android:supportsRtl="true"
 20-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:10:9-35
-21        android:theme="@style/AppTheme" >
-21-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:11:9-40
-22        <activity
-22-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:13:9-20:20
-23            android:name="com.example.glassio.Splash"
-23-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:13:19-41
-24            android:label="@string/app_name"
-24-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:15:13-45
-25            android:theme="@style/splashScreen" >
-25-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:14:13-48
-26            <intent-filter>
-26-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:16:13-19:29
-27                <action android:name="android.intent.action.MAIN" />
-27-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:17:17-69
-27-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:17:25-66
-28
-29                <category android:name="android.intent.category.LAUNCHER" />
-29-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:18:17-77
-29-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:18:27-74
-30            </intent-filter>
-31        </activity>
-32        <activity
-32-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:21:9-24:20
-33            android:name="com.example.glassio.MainActivity"
-33-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:21:19-47
-34            android:label="@string/app_name"
-34-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:23:13-45
-35            android:theme="@style/AppTheme" >
-35-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:22:13-44
-36        </activity>
-37
-38        <provider
-38-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
-39            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-39-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
-40            android:authorities="com.example.glassio.lifecycle-process"
-40-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
-41            android:exported="false"
-41-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
-42            android:multiprocess="true" />
-42-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
-43    </application>
-44
-45</manifest>
+21        android:testOnly="true"
+22        android:theme="@style/AppTheme" >
+22-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:11:9-40
+23        <activity
+23-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:13:9-20:20
+24            android:name="com.example.glassio.Splash"
+24-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:13:19-41
+25            android:label="@string/app_name"
+25-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:15:13-45
+26            android:theme="@style/splashScreen" >
+26-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:14:13-48
+27            <intent-filter>
+27-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:16:13-19:29
+28                <action android:name="android.intent.action.MAIN" />
+28-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:17:17-69
+28-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:17:25-66
+29
+30                <category android:name="android.intent.category.LAUNCHER" />
+30-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:18:17-77
+30-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:18:27-74
+31            </intent-filter>
+32        </activity>
+33        <activity
+33-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:21:9-24:20
+34            android:name="com.example.glassio.MainActivity"
+34-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:21:19-47
+35            android:label="@string/app_name"
+35-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:23:13-45
+36            android:theme="@style/AppTheme" >
+36-->/Users/web/Downloads/Android-Project/glassio/app/src/main/AndroidManifest.xml:22:13-44
+37        </activity>
+38
+39        <provider
+39-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:23:9-27:43
+40            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+40-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:24:13-79
+41            android:authorities="com.example.glassio.lifecycle-process"
+41-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:25:13-69
+42            android:exported="false"
+42-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:26:13-37
+43            android:multiprocess="true" />
+43-->[androidx.lifecycle:lifecycle-process:2.0.0] /Users/web/.gradle/caches/transforms-2/files-2.1/bba9e662e9f4bf0da774229f97b853fc/lifecycle-process-2.0.0/AndroidManifest.xml:27:13-40
+44    </application>
+45
+46</manifest>
