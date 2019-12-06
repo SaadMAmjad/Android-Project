@@ -23,8 +23,8 @@
                 android:id="@+id/cantSee"
                 android:layout_width="@dimen/image_heightDetail"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
-                android:background="@color/colorAccent"
+                android:textColor="@color/white"
+                android:background="@color/colorPrimary"
                 android:layout_gravity="center"
                 android:text="@string/cant_see_it" />
 
