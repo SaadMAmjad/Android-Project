@@ -1,7 +1,7 @@
 # Glass.io
 
 ## Breif Rundown
-An application that shows you a list of glasses in a detailed maner. You can view the glasses in different ways such as by pricing and what is selling hot.there is a color blinde test which helps you determin if you are color blind and in need of color blind glasses. the app will start off on the whats hot page and will have a list of 5 randomized glasses every time you visit the fragment.every item in both list and recycler view are clickable
+An application that shows you a list of glasses in a detailed maner. You can view the glasses in different ways such as by pricing and what is selling hot.there is a color blind test which helps you determin if you are color blind and in need of color blind glasses. the app will start off on the whats hot page and will have a list of 5 randomized glasses every time you visit the fragment.every item in both list and recycler view are clickable
 ![](https://ysheekh.scweb.ca/images/sh2.png)
 
 ## Technology and Features
