@@ -136,7 +136,7 @@ public class Contact extends Fragment {
                                 PERMISSION_LOCATION);
                     }
                 }else{
-                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("geo:0,0?q=42.295877,-83.073227(Repair Shop)"));
+                    Intent intent = new Intent(Intent.ACTION_VIEW,Uri.parse("geo:0,0?q=42.295877,-83.073227"));
 
                     if(intent.resolveActivity(getActivity().getPackageManager()) != null){
                         startActivity(intent);
