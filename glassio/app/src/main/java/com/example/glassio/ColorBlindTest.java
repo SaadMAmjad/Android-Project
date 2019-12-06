@@ -21,11 +21,11 @@ import android.widget.Button;
  * @return onCreateView returns view, getCount returns 12
  * @date 2019/12/01
  */
-public class cbTest extends Fragment {
+public class ColorBlindTest extends Fragment {
 
     private Button failed;
 
-    public cbTest() {
+    public ColorBlindTest() {
         // Required empty public constructor
     }
 
