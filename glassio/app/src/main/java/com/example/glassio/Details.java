@@ -17,7 +17,7 @@ import java.util.ArrayList;
  * @author Yonis Sheekh
  * @date 2019/12/01
  */
-public class details extends Fragment {
+public class Details extends Fragment {
     private Button button;
 
     // toast info

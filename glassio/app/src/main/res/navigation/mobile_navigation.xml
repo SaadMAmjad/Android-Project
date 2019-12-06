@@ -6,12 +6,12 @@
     app:startDestination="@id/nav_home">
     <fragment
         android:id="@+id/nav_credits"
-        android:name="com.example.glassio.credits"
+        android:name="com.example.glassio.Credits"
         android:label="Credits"
         tools:layout="@layout/fragment_credits" />
     <fragment
         android:id="@+id/nav_home"
-        android:name="com.example.glassio.home"
+        android:name="com.example.glassio.Home"
         android:label="Home"
         tools:layout="@layout/fragment_home" >
         <action
@@ -24,12 +24,12 @@
     </fragment>
     <fragment
         android:id="@+id/nav_shoppingCart"
-        android:name="com.example.glassio.wishList"
+        android:name="com.example.glassio.WishList"
         android:label="Wish List"
         tools:layout="@layout/fragment_wish_list" />
     <fragment
         android:id="@+id/nav_suggestions"
-        android:name="com.example.glassio.cbTest"
+        android:name="com.example.glassio.ColorBlindTest"
         android:label="Colorblind Test"
         tools:layout="@layout/fragment_cb_test" >
         <action
@@ -42,7 +42,7 @@
     </fragment>
     <fragment
         android:id="@+id/nav_topSells"
-        android:name="com.example.glassio.topSells"
+        android:name="com.example.glassio.TopSells"
         android:label="Pricing"
         tools:layout="@layout/fragment_top_sells" >
         <action
@@ -55,12 +55,12 @@
     </fragment>
     <fragment
         android:id="@+id/details"
-        android:name="com.example.glassio.details"
+        android:name="com.example.glassio.Details"
         android:label="Details"
         tools:layout="@layout/fragment_details" />
     <fragment
         android:id="@+id/cbAdvice"
-        android:name="com.example.glassio.cbAdvice"
+        android:name="com.example.glassio.ColorBlindAdvice"
         android:label="Our Recommendation"
         tools:layout="@layout/fragment_cb_advice" />
     <fragment

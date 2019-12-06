@@ -25,7 +25,7 @@ import java.util.Comparator;
  * @author Yonis Sheekh
  * @date 2019/12/01
  */
-public class topSells extends Fragment {
+public class TopSells extends Fragment {
 
     private Button priceBtn;
     private Button priceBtn2;
@@ -33,7 +33,7 @@ public class topSells extends Fragment {
     private ArrayList<ListViewData> data;
 
 
-    public topSells() {
+    public TopSells() {
     }
 
 
@@ -98,7 +98,7 @@ public class topSells extends Fragment {
 
     public static class CustomAdapter extends ArrayAdapter<ListViewData> {
         protected CustomAdapter(@NonNull Context context, ArrayList<ListViewData> items) {
-            super(context, 0, items);
+                super(context, 0, items);
 
         }
 

@@ -3,18 +3,21 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home"
+    tools:context=".Home"
     android:orientation="vertical">
 
     <TextView
         android:id="@+id/title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:fontFamily="sans-serif-condensed"
-        android:textSize="@dimen/main_title"
         android:layout_marginBottom="@dimen/titleRecycler"
-        android:text="@string/nav_header_title" />
+        android:background="@color/colorPrimaryDark"
+        android:fontFamily="sans-serif-condensed"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp"
+        android:text="@string/nav_header_title"
+        android:textAlignment="center"
+        android:textSize="@dimen/main_title" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_marginTop="5dp"
