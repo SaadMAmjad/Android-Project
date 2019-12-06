@@ -12,36 +12,15 @@
     <string name="wishList">Wish List</string>
     <string name="extra">Extras</string>
     <string name="credits">Credits</string>
-    <string name="credits_body">Image Sources:\n\n
-        https://www.flickr.com\n\n
-        https://pixabay.com\n\n
-        https://commons.wikimedia.org\n\n
-        https://svgsilh.com\n\n
-        https://www.maxpixels.net\n\n
-        https://pxhere.com\n\n
-
-        Workload:\n\n
-        Launcher icon and splash screen: Designed and completed by Yonis\n\n
-        JavaBean and ListView: Yonis\n\n
-        Wishlist and handler to add items to wishlist: Yonis\n\n
-        Landscape formatting: Yonis\n\n
-        Naming and randomizing glasses: Saad\n\n
-        RecyclerView and adapter: Saad\n\n
-        ViewPager and adapter: Saad\n\n
-        Sourcing Images: Saad\n\n
-
-        Full Links to Images:\n\n
-        https://pixabay.com/illustrations/glasses-eyes-vision-optical-4473774/\n\n
-        https://commons.wikimedia.org/wiki/File:Reading-Glasses.jpg\n\n
-        https://svgsilh.com/image/34011.html\n\n
-        https://www.maxpixels.net/Optician-Eyesight-Spectacles-Vision-Eyeglasses-3356460\n\n
-        https://pixabay.com/fr/vectors/lunettes-de-soleil-black-glasses-4091423/\n\n
-        https://pixabay.com/fr/illustrations/lunettes-yeux-vision-optique-4473774/\n\n
-        https://pxhere.com/es/photo/1386735\n\n
-        https://pixabay.com/fr/vectors/lunettes-de-soleil-shades-lunettes-145359/\n\n
-        https://pixabay.com/no/vectors/solbriller-cool-sol-sommer-beach-310815/
-        </string>
-
+    <string name="link1">https://www.flickr.com</string>
+    <string name="link2">https://pixabay.com</string>
+    <string name="link3">https://commons.wikimedia.org</string>
+    <string name="link4">https://svgsilh.com</string>
+    <string name="link5">https://www.maxpixels.net</string>
+    <string name="link6">https://pxhere.com\n\n</string>
+    <string name="dev1">Yonis Sheekh</string>
+    <string name="dev2">Saad Amjad</string>
+    <string name="developersTitle">Developers</string>
     <string name="sort_button_up">Ascending</string>
     <string name="sort_button_down">Descending</string>
     <string name="cant_see_it">I can\'t see it</string>
@@ -61,6 +40,14 @@
     <string name="location">Location</string>
     <string name="email">Email Us</string>
     <string name="twitter">Visit Our Twitter</string>
-
-
+    <string name="resourcesImages">Image Resource</string>
+    <string name="res1">Pixabay</string>
+    <string name="res2">Svgsilh</string>
+    <string name="res4">Flicker</string>
+    <string name="res3">maxpixels</string>
+    <string name="special">Special Thanks</string>
+    <string name="helper1">Ali</string>
+    <string name="helper2">Jimmy</string>
+    <string name="Special">Special Thanks</string>
+    <string name="links">links</string>
 </resources>

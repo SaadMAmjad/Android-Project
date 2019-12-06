@@ -19,16 +19,16 @@ import java.util.Random;
 
 /**
  * @author Saad Amjad
- * @description app start/home screen, contains a randomized recycler view showing a random selection of glasses
+ * @description app start/Home screen, contains a randomized recycler view showing a random selection of glasses
  * @param ArrayList<ListViewData> items
  * @return view
  * @date 2019/12/01
  */
-public class home extends Fragment {
+public class Home extends Fragment {
 
     private ArrayList<ListViewData> items;
 
-    public home() {
+    public Home() {
         // Required empty public constructor
     }
 

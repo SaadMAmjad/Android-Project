@@ -21,12 +21,12 @@ import android.widget.Button;
  * @return view
  * @date 2019/12/01
  */
-public class cbAdvice extends Fragment {
+public class ColorBlindAdvice extends Fragment {
 
     private Button link;
 
 
-    public cbAdvice() {
+    public ColorBlindAdvice() {
         // Required empty public constructor
     }
 

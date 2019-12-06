@@ -1,33 +1,182 @@
-<?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".credits">
+    tools:context=".Credits">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+    <TextView
+        android:id="@+id/resource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/resourcesImages"
+        android:textColor="@color/black"
+        android:textSize="@dimen/priceSize"/>
+    <TextView
+        android:id="@+id/res1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/res1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/res2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/res2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
 
     <TextView
-        android:layout_width="match_parent"
+        android:id="@+id/res3"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:textSize="@dimen/main_title"
         android:fontFamily="sans-serif-condensed"
-        android:gravity="center"
-        android:text="@string/credits"
-        android:textColor="@color/colorPrimary"/>
+        android:layout_gravity="center"
+        android:text="@string/res3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/res4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/res4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent" >
+    <TextView
+        android:id="@+id/helpResource"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/Special"
+        android:textColor="@color/black"
+        android:textSize="@dimen/priceSize"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textSize="@dimen/main_header"
-            android:fontFamily="sans-serif-condensed"
-            android:text="@string/credits_body"
-            android:textColor="@color/colorPrimary"/>
+    <TextView
+        android:id="@+id/helper1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/helper1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
 
-    </ScrollView>
+    <TextView
+        android:id="@+id/helper2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/helper2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
 
+    <TextView
+        android:id="@+id/developers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/developersTitle"
+        android:textColor="@color/black"
+        android:textSize="@dimen/priceSize"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/dev1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/dev1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/dev2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/dev2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+
+    <TextView
+        android:id="@+id/linksTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/links"
+        android:textColor="@color/black"
+        android:textSize="@dimen/priceSize"/>
+
+    <TextView
+        android:id="@+id/link1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/link1"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/link2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/link2"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/link3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/link3"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/link4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/link4"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    <TextView
+    android:id="@+id/link5"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:fontFamily="sans-serif-condensed"
+    android:layout_gravity="center"
+    android:text="@string/link5"
+    android:textColor="@color/black"
+    android:textSize="@dimen/item_descriptors"/>
+    <TextView
+        android:id="@+id/link6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:layout_gravity="center"
+        android:text="@string/link6"
+        android:textColor="@color/black"
+        android:textSize="@dimen/item_descriptors"/>
+    </LinearLayout>
+</ScrollView>

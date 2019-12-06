@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".cbTest">
+    tools:context=".ColorBlindTest">
 
         <LinearLayout
             android:orientation="vertical"
@@ -17,14 +17,14 @@
                 android:textAlignment="center"
                 android:fontFamily="sans-serif-condensed"
                 android:textSize="@dimen/main_title"
-                android:textColor="@color/colorPrimary"
+                android:textColor="@color/black"
                 android:text="@string/action_colorB" />
             <Button
                 android:id="@+id/cantSee"
                 android:layout_width="@dimen/image_heightDetail"
                 android:layout_height="wrap_content"
-                android:textColor="@color/white"
-                android:background="@color/colorPrimary"
+                android:textColor="@color/black"
+                android:background="@color/colorAccent"
                 android:layout_gravity="center"
                 android:text="@string/cant_see_it" />
 

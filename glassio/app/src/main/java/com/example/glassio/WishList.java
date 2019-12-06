@@ -2,7 +2,6 @@ package com.example.glassio;
 
 
 import android.app.AlertDialog;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.os.Bundle;
@@ -10,7 +9,6 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -28,10 +26,10 @@ import java.util.ArrayList;
  * @author Yonis Sheekh
  * @date 2019/12/01
  */
-public class wishList extends Fragment {
+public class WishList extends Fragment {
 
     private CustomAdapter adapter;
-    public wishList() {
+    public WishList() {
         // Required empty public constructor
     }
 
@@ -50,7 +48,7 @@ public class wishList extends Fragment {
         View view = inflater.inflate(R.layout.fragment_wish_list, container, false);
         ListView listView = view.findViewById(R.id.wishList);
 
-        adapter = new CustomAdapter(getContext(), details.dataWish);
+        adapter = new CustomAdapter(getContext(), Details.dataWish);
 
 
         listView.setAdapter(adapter);
@@ -65,7 +63,7 @@ public class wishList extends Fragment {
                                 .setPositiveButton("yes", new DialogInterface.OnClickListener() {
                                     @Override
                                     public void onClick(DialogInterface dialogInterface, int i) {
-                                        details.dataWish.remove(deletedItem);
+                                        Details.dataWish.remove(deletedItem);
                                         adapter.notifyDataSetChanged();
                                     }
                                 })
